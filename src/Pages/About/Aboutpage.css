@@ -1,0 +1,316 @@
+.mainContainer{
+    width: 1024px;
+    height: fit-content;
+    margin: 0 auto;
+  
+
+}
+.heroSection{
+    display: flex;
+    height: 50vh;
+}
+.heroLeft{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+.heroLeft p,span{
+    font-family: 'Marcellus SC';
+}
+.heroLbutton{
+    border: 1px solid black;
+    padding: 5px;
+    position: relative;
+    font-weight: bold;
+    font-family:'Marcellus SC' ;
+    z-index: 2;
+}
+.heroConatct{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    bottom: -55px;
+    left: -1px;
+    border: 0.5px solid black;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-22px);
+    opacity: 0;
+}
+.heroConatctActive{
+    position: absolute;
+    display:flex block;
+    flex-direction: column;
+    bottom: -55px;
+    left: -1px;
+    border: 0.5px solid black;
+    transform: translateY(0);
+    opacity: 1;
+}
+.heroLbutton::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fb385c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(5px) translateX(5px);
+    opacity: 0.8;
+    z-index: -1;
+
+}
+.heroRight{
+    flex:1;
+}
+.aboutSkill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.aboutSkill p{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5e5c5d;
+    letter-spacing: 3px;
+}
+.aboutSkill p::after{
+    content: "";
+    width: 117px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #fb385c;
+}
+.aboutSkill-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.frontendSkill{
+    flex: 1;
+    
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 1px -2px #0003,0 2px 2px #00000024,0 1px 5px #0000001f;
+}
+.backendSkill{
+    flex: 1;
+    
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 1px -2px #0003,0 2px 2px #00000024,0 1px 5px #0000001f;
+}
+.f-skill-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+.f-skill1{
+    display: flex;
+    font-size: 1.1rem;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.f-skill2{
+    display: flex;
+    font-size: 1.1rem;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.f-skill3{
+    display: flex;
+    font-size: 1.1rem;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.f-skill4{
+    display: flex;
+    font-size: 1.1rem;
+    width: 50%;
+    padding-top: 10px;
+    position: relative;
+}
+.f-skill1::after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.f-skill2::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.f-skill3::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.f-skill4::after{
+    content: "";
+    position: absolute;
+    width: 75%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.f-skill1::before{
+    content: "";
+    position: absolute;
+    width: 15%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.f-skill2::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.f-skill3::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.f-skill4::before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.B-skill-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+.B-skill1 , .B-skill2 , .B-skill3, .B-skill4{
+    display: flex;
+    font-size: 1.1rem;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.B-skill1::after{
+    content: "";
+    position: absolute;
+    width: 65%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.B-skill1::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.B-skill2::after{
+    content: "";
+    position: absolute;
+    width: 65%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.B-skill2::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.B-skill3::after{
+    content: "";
+    position: absolute;
+    width: 65%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.B-skill3::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+.B-skill4::after{
+    content: "";
+    position: absolute;
+    width: 65%;
+    background-color: #fb385c;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+}
+.B-skill4::before{
+    content: "";
+    position: absolute;
+    width: 35%;
+    background-color: #5e5c5d;
+    height: 5px;
+   right: 0;
+    bottom: 0;
+}
+
+@media (max-width:400px){
+    .mainContainer{
+        width: 100vw;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .aboutSkill-wrapper{
+        flex-direction: column;
+    }
+}

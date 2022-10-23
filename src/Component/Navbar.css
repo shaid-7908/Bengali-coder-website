@@ -1,0 +1,160 @@
+html{
+    --button-color:rgb(35, 85, 234);
+    --text-colorW:white;
+    --text-fontfamily1:'Roboto', sans-serif;
+    --text-fontfamily2:'Poppins', sans-serif;
+    --text-fontWeightB:bold;
+    --text-fontWeightBB:bolder;
+}
+*{
+    font-family: var(--text-fontfamily2);
+   
+    letter-spacing: 1px;
+}
+.navbarContainer{
+    background-color: rgb(245, 245, 245);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.navbarMenuiconactive{
+    position: absolute;
+    right: 2px;
+    display: none;
+}
+.navbarLeft{
+    flex:1;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: rgb(12, 12, 29);
+}
+.navbarRight{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarMenulist{
+    flex:2;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbarListitems{
+color: black;
+position: relative;
+font-weight: var(--text-fontWeightB);
+}
+.navbarListitems::after{
+    content: "";
+    width: 0;
+    background-color: #fb385c;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease-in-out;
+}
+.navbarListitems:hover::after{
+    width: 100%;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.navbarProfileandlogin{
+    flex:1;
+}
+.navbarLoginbutton{
+    box-shadow:  0 3px 6px #0000000f;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-colorW);
+}
+.navbarLoginbutton:hover{
+transform:translateY(2px);
+transition: 0.1s ease-in-out;
+}
+/* responsive ===================================================================================================  */
+@media (max-width:400px){
+    .navbarMenuiconactive{
+        display: block;
+        color: rgb(63, 63, 63);
+        border: 0.5px solid rgb(63, 63, 63) ;
+        border-radius: 4px;
+    }
+    .navbarContainer{
+        position: relative;
+       display: flex;
+       flex-direction: column;
+       
+    }
+    .navbarLeft{
+        flex: 1;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    .navbarRight{
+        position: absolute;
+        top:10vh;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        background-color: white;
+        transform: translateX(-100vw);
+        transition: 00.3s ease-in-out;
+    }
+    .navbarRightactive{
+        position: absolute;
+        top:10vh;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        background-color: white;
+        transform: translateX(0);
+        transition: 00.6s ease-in-out;
+    }
+    .navbarMenulist{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+       
+    }
+    .navbarListitems{
+        margin-top: 20px;
+    }
+    .navbarListitems:hover:after{
+        width: 50%;
+    }
+    .navbarProfileandlogin{
+        flex:2;
+        display: flex;
+        justify-content: center;
+      
+    }
+    .navbarLoginbutton{
+        height: fit-content;
+    }
+    .navbarLoginbutton:hover{
+        transform: scale(1.1);
+        transition: 00.3s ease-in-out;
+    }
+    
+}

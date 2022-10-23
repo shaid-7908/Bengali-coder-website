@@ -1,0 +1,26 @@
+.courseContainer{
+    width: 100vw;
+    height: fit-content;
+}
+.course-c-hero{
+    width: 70vw;
+    height: 25vh;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bolder;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+.course-c-hero p{
+    color: #1e1e4a;
+    text-transform: uppercase;
+    font-family: 'Marcellus SC', serif;
+}
+.courseWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}

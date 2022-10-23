@@ -1,0 +1,42 @@
+img[alt$="exm"]{
+    width: 100%;
+    object-fit: contain;
+  }
+img[alt$="exmSmall"]{
+    width: 50%;
+    object-fit: contain;
+  }
+  @media (max-width:400px){
+    img[alt$="exmSmall"]{
+      width: 100%;
+      object-fit: contain;
+    }
+  
+  }
+ 
+  .htmlPagestyle h1,h2,h3{
+    margin-bottom: 20px;
+   
+  }
+  .htmlPagestyle p img{
+    border: 1px solid black;
+  }
+  .buttonDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .buttonPrev{
+    background-color: blueviolet;
+     padding: 10px;
+     width: 80px;
+    color: white;
+    border-radius: 8px;
+  }
+  .buttonNext{
+    background-color: blueviolet;
+    padding: 10px;
+    width: 80px;
+   color: white;
+   border-radius: 8px;
+  }

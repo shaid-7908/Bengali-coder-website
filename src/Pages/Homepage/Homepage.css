@@ -149,7 +149,7 @@ border-bottom: 0.5px solid #D9D9D9;
     justify-content: flex-start;
     flex-direction: column;
 }
-@media (max-width:400px){
+@media (max-width:420px){
     .m2-conatiner{
         width: 100vw;
     }
@@ -193,10 +193,11 @@ border-bottom: 0.5px solid #D9D9D9;
     grid-column: unset;
    }
    .m2-c-hero{
+    width: 100vw;
     height: 300px;
    }
    .m2-c-hero-header{
-    font-size: 20px;
+    font-size: 25px;
    }
    .m2-c-hero-para{
     font-size: 10px;

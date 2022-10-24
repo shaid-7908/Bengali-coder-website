@@ -30,7 +30,7 @@
 .footerSocial span{
     padding: 0 10px;
 }
-@media (max-width:400px){
+@media (max-width:420px){
     .footerMainContainer{
         flex-direction: column;
         height: 20vh;

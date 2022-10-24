@@ -304,7 +304,7 @@
     bottom: 0;
 }
 
-@media (max-width:400px){
+@media (max-width:420px){
     .mainContainer{
         width: 100vw;
         height: fit-content;
